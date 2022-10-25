@@ -14,9 +14,13 @@ factDiv.innerHTML=loadText;
         // 'x-requested-with':'text/plain'
     // }
     
-    const baseurl='http://numbersapi.com/';
+    const baseurl='https://cors-anywhere.herokuapp.com/http://numbersapi.com/';
     
-     fetch(baseurl+number+"/"+type
+     fetch(baseurl+number+"/"+type,{
+     method:"GET",
+     headers:{
+        'x-requested-with':'text/plain'
+     }}
      )
      .then(response =>response.text())
      .then(text =>factDiv.innerHTML=text);
