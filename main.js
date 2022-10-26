@@ -16,12 +16,8 @@ factDiv.innerHTML=loadText;
     
     const baseurl='https://cors-anywhere.herokuapp.com/http://numbersapi.com/';
     
-     fetch(baseurl+number+"/"+type,{
-     method:"GET",
-     headers:{
-        'x-requested-with':'text/plain'
-     }}
+     fetch(baseurl+number+"/"+type
      )
      .then(response =>response.text())
      .then(text =>factDiv.innerHTML=text);
-})
+}).catch((err)=>console.log(error));
