@@ -21,10 +21,16 @@ body{
     align-items: center;
     z-index: -1;
     opacity: 0.6;
-    justify-content: center;
-}
+    justify-content: center;}
 section{
     width: 100%;
+}
+body:hover{
+    grid-column: inherit;
+    background-color: rgb(20, 1, 1);
+}
+body:visited{
+    background-color: rgb(30, 15, 29);
 }
 .container{
     width: 90%;
@@ -39,6 +45,9 @@ form{
     background-color: rgb(42, 6, 66);
     padding: 20px;
     border-radius: 8px;
+}
+form:hover{
+    background-color: rgb(49, 46, 12);
 }
 input[type="number"]{
 width: 70%;
@@ -76,7 +85,7 @@ font-weight: 400;
 }
 button{
     display: inline-block;
-    width: 25%;
+    width: 35%;
     height: 40px;
     font-size: 24px;
     background-color: brown;
@@ -87,7 +96,7 @@ button{
     cursor: pointer;
     color: black;
 }
-#btu:hover{
+#btu:hover,#btu:visited{
     background-color: rgb(55, 69, 56);
 }
 
@@ -96,4 +105,8 @@ button{
     height: auto;
     background-color: rgb(63, 9, 86);
     font-size: 20px;
+}
+.numfact:hover{
+    background-color: rgb(42, 14, 24);
+    color: azure;
 }
